@@ -340,7 +340,9 @@ figure{
 .vc_row.row2{
     height: 140px;
     line-height: 140px;
-    background: #00003c;
+    background-image: url(image/content-bg02.jpg);
+    background-position: center center;
+    /* background: #00003c; */
     text-align: center;
     font-size: 26px;
     font-weight: bold;
@@ -487,6 +489,7 @@ figure{
 
     .carousel-item.box{
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         height: auto;
     }
