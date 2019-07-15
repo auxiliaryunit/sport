@@ -35,8 +35,25 @@ body{
     list-style: none;
 }
 
+.cursor{
+    cursor: context-menu;
+}
+
 .red{
     color: red;
+}
+
+section{
+    padding: 80px 0;
+}
+
+section h3{
+    margin-right: 45px;
+    margin-bottom: 10px;
+    color: #212529;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
 }
 
 a{    
@@ -52,6 +69,7 @@ figure{
     margin: 0;
 }
 
+/* ----- sec1 ----- */
 .header_inner{
     top: 0;
     left: 0;
@@ -68,13 +86,13 @@ figure{
 } */
 
 .nav{
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .nav>ul{
     height: 70px;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 0 90px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0 60px;
 }
 
 .nav>ul>li>a{
@@ -90,7 +108,7 @@ figure{
 }
 
 .tp-mask{
-    top: 200%;
+    top: 220%;
     color: #fff;
 }
 
@@ -107,7 +125,7 @@ figure{
     margin: 20px 0;
 }
 
-.join{
+.join, .join_2{
     background: transparent;
     color: #fff;
     line-height: 21px;
@@ -121,9 +139,86 @@ figure{
 }
 
 .join:hover{
+    background: #e21e22;
+    border: 2px solid #e21e22;
+    color: #fff;
+}
+
+.join_2:hover{
     background: #fff;
     color: #e21e22;
 }
+
+@media (max-width: 1350px){
+    .tp-mask{
+        top: 150%;
+    }
+}
+
+@media (max-width: 1199.98px){
+    .tp-mask h1{
+        font-size: 35px;
+        margin: 0 0 20px;
+    }
+    
+    .tp-mask h2{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 991.98px){
+    .tp-mask{
+        top: 120%;
+    }
+
+    .tp-mask h1{
+        font-size: 28px;
+        margin: 0;
+    }
+    
+    .tp-mask h2{
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .join, .join_2 {
+        padding: 10px 49px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767.98px){
+    .nav{
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px){
+    .tp-mask{
+        top: 10px;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+
+    .tp-mask h2{
+        display: none;
+    }
+
+    .join {
+        margin-top: 60px;
+    }
+
+    .join_2{
+        display: none;
+    }
+}
+
+/* ----- sec2 ----- */
 
 .main{
     top: 0;
@@ -159,25 +254,19 @@ figure{
     letter-spacing: 1.1px;
 }
 
-.vc_row>.container>.join{
+.vc_row>.container>.join_2{
     margin: auto;
     margin-right: 0;    
     font-weight: bold;
 }
 
-section{
-    padding: 80px 0;
+@media (max-width: 575.98px){
+    .vc_row{
+        font-size: 18px;
+    }
 }
 
-section h3{
-    margin-right: 45px;
-    margin-bottom: 10px;
-    color: #212529;
-    font-size: 30px;
-    line-height: 40px;
-    font-weight: 700;
-}
-
+/* ----- sec3 Sport ----- */
 .stm-next-match-controls {
     overflow: hidden;
     padding-top: 8px;
@@ -236,6 +325,18 @@ section h3{
     height: auto;
 }
 
+@media (max-width: 575.98px){
+    .league_baseball{
+        flex-wrap: wrap;
+    }
+
+    .league_baseball>a{
+        width: 70%;
+        margin: 30px auto;
+    }
+}
+
+/* ----- slogan ----- */
 .vc_row.row2{
     height: 140px;
     line-height: 140px;
@@ -246,6 +347,50 @@ section h3{
     letter-spacing: 1.1px;
 }
 
+@media (max-width: 1199.98px){
+    .vc_row.row2{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 991.98px){
+    .vc_row.row2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767.98px){
+    /* .vc_row.row2{
+        font-size: 16px;
+    } */
+
+    span.none{
+        display: none;
+    }
+
+    .vc_row.row2>.container{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 575.98px){
+    span.global{
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px){
+    .vc_row.row2 {
+        height: 90px;
+        line-height: 90px;
+    }
+
+    span.b_name{
+        display: none;
+    }
+}
+
+/* ----- sec4 New Games ----- */
 .new_games{
     background: #e0e0e0;
 }
@@ -318,18 +463,77 @@ section h3{
     background-color: #666;
 }
 
+@media (max-width: 991.98px) {
+    .box {
+        height: 400px;
+    }
+}
+
+@media (max-width: 767.98px){
+    .box {
+        height: 350px;
+    }
+}
+
+@media (max-width: 575.98px){
+    #new>.container>#carouselExampleIndicators{
+        height: 1180px;
+        position: relative;
+    }
+
+    #limit{
+        max-height: 1100px;
+        overflow: hidden;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        max-height: 1200px;
+        overflow: hidden;
+        display: flex!important;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .media_gallery, 
+    .media_gallery2, 
+    .media_gallery3, 
+    .media_gallery4,
+    .media_gallery5, 
+    .media_gallery6{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: auto;
+        max-height: 180px;
+        margin: 10px auto;
+        overflow: hidden;
+        align-items: flex-start;
+    }
+
+    .media, .media2{
+        padding: 0;
+    }
+}
+
+/* ----- slider ----- */
 .carousel-control-next, .carousel-control-prev{
     width: 5%;
     z-index: 30;
 }
 
+
+/* ----- sec5 Video ----- */
 .video{
     width: 100%;
     justify-content: space-between;
 }
 
 .row{
-    width: 300px;
+    width: 33.3%;
+    max-width: 300px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -362,6 +566,36 @@ a.free{
     font-weight: bold;
 }
 
+@media (max-width: 991.98px){
+    .video_img{
+        padding: 0;
+        margin: 30px 5px;
+    }
+}
+
+@media (max-width: 767.98px){
+    .video_img {
+        height: auto;
+    }
+
+    .video_img>a>img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 575.98px){
+    .video{
+        flex-wrap: wrap;
+    }
+
+    .row{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+/* ----- Incomes ----- */
 .incomes{
     width: 100%;
     height: auto;
@@ -374,10 +608,16 @@ a.free{
     height: auto;
 }
 
+/* ----- sec6 Chose ----- */
+#chose{
+    background: #e0e0e0;
+}
+
 .image {
     width: 260px;
     height: auto;
     max-height: 355px;
+    object-fit: contain;
     position: relative;
     margin: 30px 15px 14px;
     overflow: hidden;
@@ -415,10 +655,10 @@ a.free{
 
 .stm-plus{
     position: absolute;
-    width: 76px;
-    height: 76px;
-    top: 50%;
-    left: 50%;
+    width: 247.94px;
+    height: 355px;
+    bottom: 0;
+    right: 0;
     margin: -38px 0 0 -38px;
     /* border: 2px solid #fff; */
     border-radius: 50%;
@@ -459,10 +699,11 @@ a.free{
     width: 100%;
     height: 35px;
     line-height: 35px;
-    background: #151515;
+    background: rgba(21, 21, 21, .8);
     position: absolute;
     bottom: 0;
     z-index: 25;
+    font-size: 15.2px;
     color: #fff;
     text-align: center;
 }
@@ -471,6 +712,92 @@ a.free{
     min-height: 450px;
 }
 
+.carousel.slide.btm>.carousel-indicators>li{
+    cursor: context-menu;
+}
+
+@media (max-width: 1199.98px){
+    .image {
+        max-height: 305px;
+    }
+
+    .image>a>img{
+        max-height: 305px;
+    }
+
+    .stm-plus{
+        width: 202px;
+        height: 305px;
+    }
+}
+
+@media (max-width: 991.98px){
+    .image {
+        max-height: 250px;
+    }
+
+    .image>a>img{
+        max-height: 250px;
+    }
+
+    .stm-plus{
+        width: 142.5px;
+        height: 250px;
+    }
+
+    .carousel.slide.btm {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 767.98px){
+    .image {
+        max-height: 180px;
+        margin: 30px 5px 14px;
+    }
+
+    .image>a>img{
+        max-height: 180px;
+    }
+
+    .stm-plus{
+        width: 117.5px;
+        height: 180px;
+    }
+
+    .carousel.slide.btm {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 575.98px){
+    .chose{
+        flex-wrap: wrap;
+    }
+
+    .image {
+        width: 40%;
+        height: 100%;
+        margin: 10px auto;
+    }
+
+    .image>a>img{
+        width: 100%;
+        height: auto;
+        background: #cacaca;
+    }
+
+    .stm-plus{
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel.slide.btm {
+        min-height: 450px;
+    }
+}
+
+/* ----- footer ----- */
 footer{
     height: 90px;
     line-height: 90px;
