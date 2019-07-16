@@ -43,6 +43,10 @@ body{
     color: red;
 }
 
+.active{
+    z-index: 30;
+}
+
 section{
     padding: 80px 0;
 }
@@ -461,6 +465,10 @@ figure{
     height: auto;
 }
 
+.carousel-indicators{
+    z-index: 35;
+}
+
 .carousel-indicators li{
     background-color: #666;
 }
@@ -483,8 +491,8 @@ figure{
     }
 
     #limit{
-        height: 1250px;
-        margin: 60px 0;
+        /* height: 1250px; */
+        margin: 60px 0 0;
     }
 
     .carousel-item.box{
@@ -829,7 +837,12 @@ a.free{
     }
 }
 
-@media (max-width: 360px){
+@media (max-width: 375px){
+    .image>a{
+        display: flex;
+        justify-content: center;
+    }
+
     .image>a>img{
         width: auto;
         height: 100%;
@@ -845,4 +858,3 @@ footer{
     font-size: 16px;
     text-align: center;
 }
-
