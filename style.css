@@ -73,6 +73,22 @@ figure{
     margin: 0;
 }
 
+.go-top {
+    width: 38px;
+    height: 38px;
+    position: fixed;
+    bottom: 2.5%;
+    right: 5%;
+    z-index: 101;
+    cursor: pointer;
+}
+
+@media (max-width: 375px){
+    .go-top{
+        bottom: 15%;
+    }
+}
+
 /* ----- sec1 ----- */
 .header_inner{
     top: 0;
@@ -96,7 +112,7 @@ figure{
 .nav>ul{
     height: 70px;
     background: rgba(255, 255, 255, 0.1);
-    padding: 0 60px;
+    padding: 0 40px;
 }
 
 .nav>ul>li>a{
@@ -458,11 +474,33 @@ figure{
     object-fit: cover;
     overflow: hidden;
     align-items: center;
+    position: relative;
 }
 
 .media>a>img,.media2>a>img{
     width: 100%;
     height: auto;
+}
+
+.ng:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff88;
+    opacity: 0;
+    transform: scale2d(1,0);
+    transition: transform .5s,opacity .5s;
+    transition-timing-function: cubic-bezier(.2,1,.3,1);
+    margin: 0 15px 30px;
+}
+
+.ng:hover.ng:before{
+    transform: scale2d(1,1);
+    opacity: .5;
 }
 
 .carousel-indicators{
@@ -492,7 +530,7 @@ figure{
 
     #limit{
         /* height: 1250px; */
-        margin: 60px 0 0;
+        margin: 40px 0 0;
     }
 
     .carousel-item.box{
@@ -684,7 +722,7 @@ a.free{
     background-color: #151515;
     opacity: 0;
     transform: scale3d(.7,1,1);
-    transition: transform .4s,opacity .4s;
+    transition: transform .5s,opacity .5s;
     transition-timing-function: cubic-bezier(.2,1,.3,1);
 }
 
@@ -833,7 +871,7 @@ a.free{
     }
 
     .carousel.slide.btm {
-        min-height: 450px;
+        min-height: 435px;
     }
 }
 
