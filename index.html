@@ -88,43 +88,43 @@
                 <div class="carousel-item box p_relative active">
                     <div class="gallery media_gallery p_absolute d-flex">
                         <div class="media d-flex"> 
-                            <a class="ng" href="http://s1c801.db1688.net/sport" target="_blank" class="fancybox"> 
-                                <img src="https://splash.scdn4.secure.raxcdn.com/basketball/wp-content/uploads/sites/6/2016/06/photo-1-540x500.jpg" alt="">
+                            <a class="ng" href="http://s1c801.db1688.net/lottery" target="_blank" class="fancybox"> 
+                                <img src="image/ng001.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="gallery media_gallery2 p_absolute d-flex">
                         <div class="media2 d-flex"> 
                             <a class="ng" href="http://s1c801.db1688.net/casino_game" class="fancybox"> 
-                                <img src="https://splash.scdn4.secure.raxcdn.com/basketball/wp-content/uploads/sites/6/2016/06/audio-2-270x530.jpg" alt="">
+                                <img src="image/ng002.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="gallery media_gallery3 p_absolute d-flex">
                             <div class="media d-flex"> 
-                                <a class="ng" href="http://s1c801.db1688.net/slot_game" class="fancybox"> 
-                                    <img src="https://splash.scdn4.secure.raxcdn.com/basketball/wp-content/uploads/sites/6/2016/06/audio-3-570x250.jpg" alt="">
+                                <a class="ng" href="http://s1c801.db1688.net/sport" class="fancybox"> 
+                                    <img src="image/ng003.png" alt="">
                                 </a>
                             </div>
                         </div>
                     <div class="gallery media_gallery4 p_absolute d-flex">
                         <div class="media d-flex"> 
-                            <a class="ng" href="http://s1c801.db1688.net/lottery" class="fancybox"> 
-                                <img src="https://splash.scdn4.secure.raxcdn.com/basketball/wp-content/uploads/sites/6/2016/06/video-3-540x500.jpg" alt="">
+                            <a class="ng" href="http://s1c801.db1688.net/slot_game" class="fancybox"> 
+                                <img src="image/ng004.png" alt="">
                             </a>
                     </div>
                     </div>
                     <div class="gallery media_gallery5 p_absolute d-flex">
                         <div class="media d-flex"> 
-                            <a class="ng" href="http://s1c801.db1688.net/sport" class="fancybox"> 
-                                <img src="https://splash.scdn4.secure.raxcdn.com/basketball/wp-content/uploads/sites/6/2016/06/photo-3-540x500.jpg" alt="">
+                            <a class="ng" href="http://s1c801.db1688.net/lottery" class="fancybox"> 
+                                <img src="image/ng005.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="gallery media_gallery6 p_absolute d-flex">
                         <div class="media d-flex"> 
-                            <a class="ng" href="http://s1c801.db1688.net/casino_game" class="fancybox"> 
-                                <img src="https://splash.scdn4.secure.raxcdn.com/basketball/wp-content/uploads/sites/6/2016/06/video-4-540x500.jpg" alt="">
+                            <a class="ng" href="http://s1c801.db1688.net/sport" class="fancybox"> 
+                                <img src="image/ng006.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -222,12 +222,12 @@
         </div>
     </section>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+            <div style="max-height: 450px; align-items: center;" class="carousel-inner d_flex">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="image/20190626.jpg" alt="First slide">
+                    <img style="width: 100%; height: auto;" class="d-block w-100" src="image/slider001.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="image/20190627.jpg" alt="Second slide">
+                    <img style="width: 100%; height: auto;" class="d-block w-100" src="image/slider002.jpg" alt="Second slide">
                 </div>
             </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -276,8 +276,8 @@
             </div>
         </div>
     </section>
-    <figure class="incomes">
-        <img src="https://static.wixstatic.com/media/a57d97_3d3f1a350b91491e949a3e7eb2f4a1a4~mv2.jpg/v1/fill/w_1819,h_351,al_c,q_85/a57d97_3d3f1a350b91491e949a3e7eb2f4a1a4~mv2.webp" alt="">
+    <figure style="max-height:367px; align-items: center;" class="incomes d_flex">
+        <img style="width: 100%; height: auto;" src="image/incomes.jpg" alt="">
     </figure>
     <section id="chose">
         <div class="container">
@@ -439,6 +439,18 @@
         $(document).ready(function() {
 			$('#nav').onePageNav();
 		});
+
+        $(document).ready(function(){         
+            $("#goTop").hide();                      
+        });
+
+        $(window).scroll(function(){                 
+            if($(this).scrollTop()>400){
+                $("#goTop").fadeIn();                 
+            } else {                     
+                $("#goTop").fadeOut();                 
+            }             
+        });   
 
         $("#goTop").click(function () {
             //$(window).scrollTop(0);
