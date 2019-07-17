@@ -496,7 +496,7 @@ figure{
     transform: scale2d(1,0);
     transition: transform .5s,opacity .5s;
     transition-timing-function: cubic-bezier(.2,1,.3,1);
-    margin: 0 15px 30px;
+    /* margin: 0 15px 30px; */
 }
 
 .ng:hover.ng:before{
