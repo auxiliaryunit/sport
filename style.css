@@ -700,6 +700,7 @@ a.free{
     position: relative;
     margin: 30px 15px 14px;
     overflow: hidden;
+    text-align: center;
 }
 
 .image>a{
@@ -861,8 +862,8 @@ a.free{
     }
 
     .image>a>img{
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
         background: #cacaca;
     }
 
@@ -873,6 +874,10 @@ a.free{
 
     .carousel.slide.btm {
         min-height: 435px;
+    }
+
+    .space{
+        display: none;
     }
 }
 
