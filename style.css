@@ -119,13 +119,13 @@ figure{
 .nav>ul>li>a{
     padding: 0 24px;
     line-height: 70px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
     font-weight: 700;
     font-size: 16px;
 }
 
 .nav>ul>li>a:hover{
-    color: red;
+    color: #fff;
 }
 
 .tp-mask{
@@ -743,6 +743,12 @@ a.free{
     margin: -38px 0 0 -38px;
     /* border: 2px solid #fff; */
     border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 20;
     opacity: 0;
     transition: transform .5s,opacity .5s;;
@@ -754,7 +760,7 @@ a.free{
     display: block;
     width: 2px;
     height: 22px;
-    top: 50%;
+    top: 20%;
     left: 50%;
     margin: -12px 0 0 -1px;
     background-color: #fff;
@@ -766,14 +772,25 @@ a.free{
     display: block;
     width: 22px;
     height: 2px;
-    top: 50%;
+    top: 20%;
     left: 50%;
     margin: -2px 0 0 -11px;
     background-color: #fff;
 }
 
+.stm-plus p{
+    width: 100%;
+    padding: 30px 15px;
+    background-color: rgba(21,21,21,.2);
+}
+
+.stm-plus.hidden:before,
+.stm-plus.hidden:after{
+    display: none;
+}
+
 .image:hover.image a .stm-plus{
-    opacity: .6;
+    opacity: 1;
 }
 
 .info{
@@ -824,7 +841,14 @@ a.free{
     .stm-plus{
         width: 142.5px;
         height: 250px;
+        font-size: 13px;
+        line-height: 1.2rem;
     }
+
+    .stm-plus:before,
+    .stm-plus:after{
+        display: none;
+}
 
     .carousel.slide.btm {
         min-height: 350px;
@@ -844,6 +868,15 @@ a.free{
     .stm-plus{
         width: 117.5px;
         height: 180px;
+        font-size: 10px;
+        z-index: 50;
+        border-radius: 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .stm-plus p{
+        display: contents;
+        /* padding: 5px 10px; */
     }
 
     .carousel.slide.btm {
