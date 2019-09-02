@@ -988,7 +988,8 @@ footer{
 }
 
 .ms-content-box {
-    width: 501px;
+    width: 100%;
+    max-width: 501px;
     height: 634px;
     position: relative;
     font-size: 15px;
@@ -1016,12 +1017,12 @@ footer{
 }
 
 .tl-content-rank {
-    width: 118px;
+    width: 25%;
     padding-left: 20px;
 }
 
 .tl-content-anchor {
-    width: 242px;
+    width: 50%;
 }
 
 .tl-content-list {
@@ -1032,7 +1033,7 @@ footer{
 }
 
 .mCSB_inside > .mCSB_container {
-    margin-right: 6px !important;
+    margin-right: 1px !important;
 }
 
 .area-list-li {
@@ -1071,7 +1072,7 @@ footer{
 }
 
 .area-list-name, .area-list-name:hover {
-    width: 236px;
+    width: 50%;
     line-height: 23px;
     font-size: 14px;
     position: relative;
@@ -1079,8 +1080,8 @@ footer{
 }
 
 .area-list-num {
-    width: 70px;
-    text-align: right;
+    width: 20%;
+    text-align: left;
 }
 
 .area-list-li1 {
@@ -1088,6 +1089,7 @@ footer{
 }
 
 .area-list-li {
+    width: 100%;
     /* height: 40px; */
     padding: 9px 0;
     position: relative;
@@ -1137,5 +1139,26 @@ footer{
     background: url(image/image_2019_08_25.png) center fixed;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 520px){
+    .area-list-rank{
+        margin-left: 17px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 370px){
+    .area-list-rank{
+        margin-right: 20px;
+    }
+
+    .area-list-icon{
+        display: none !important;
+    }
+
+    .area-list-name, .area-list-name:hover {
+        width: 47%;
+    }
 }
 
