@@ -1017,12 +1017,12 @@ footer{
 }
 
 .tl-content-rank {
-    width: 25%;
+    width: 24%;
     padding-left: 20px;
 }
 
 .tl-content-anchor {
-    width: 50%;
+    width: 46%;
 }
 
 .tl-content-list {
@@ -1072,7 +1072,7 @@ footer{
 }
 
 .area-list-name, .area-list-name:hover {
-    width: 50%;
+    width: 40%;
     line-height: 23px;
     font-size: 14px;
     position: relative;
@@ -1080,8 +1080,8 @@ footer{
 }
 
 .area-list-num {
-    width: 20%;
-    text-align: left;
+    width: 19%;
+    text-align: right;
 }
 
 .area-list-li1 {
