@@ -153,6 +153,10 @@ figure{
 }
 
 @media (max-width: 1199.98px){
+    .nav{
+        display: none;
+    }
+
     .tp-mask h1{
         font-size: 38px;
         margin: 0 0 15px;
@@ -165,10 +169,6 @@ figure{
 }
 
 @media (max-width: 991.98px){
-    .nav{
-        display: none;
-    }
-
     .tp-mask{
         top: 35%;
     }
@@ -989,7 +989,7 @@ footer{
 
 .ms-content-box {
     width: 100%;
-    max-width: 501px;
+    max-width: 650px;
     height: 634px;
     position: relative;
     font-size: 15px;
@@ -999,13 +999,13 @@ footer{
 .ms-content-table {
     width: 100%;
     /* height: 546px; */
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .tl-content-title {
     width: 100%;
     line-height: 43px;
-    font-size: 14px;
+    font-size: 17px;
     color: #fff;
     background-color: #000;
 }
@@ -1022,7 +1022,7 @@ footer{
 }
 
 .tl-content-anchor {
-    width: 46%;
+    width: 44%;
 }
 
 .tl-content-list {
@@ -1062,7 +1062,7 @@ footer{
 
 .area-list-icon {
     position: relative;
-    margin-right: 8px;
+    margin-right: 45px;
 }
 
 .area-list-icon, .area-list-icon img {
@@ -1072,9 +1072,9 @@ footer{
 }
 
 .area-list-name, .area-list-name:hover {
-    width: 40%;
+    width: 37%;
     line-height: 23px;
-    font-size: 14px;
+    font-size: 17px;
     position: relative;
     color: #fff;
 }
@@ -1141,16 +1141,26 @@ footer{
     background-repeat: no-repeat;
 }
 
+@media (max-width: 767.98px){
+    .area-list-icon {
+        margin-right: 8px;
+    }
+}
+
 @media (max-width: 520px){
     .area-list-rank{
         margin-left: 17px;
         margin-right: 0;
     }
+
+    .area-list-icon{
+        margin-right: 5%;
+    }
 }
 
-@media (max-width: 370px){
+@media (max-width: 450px){
     .area-list-rank{
-        margin-right: 20px;
+        margin-right: 7%;
     }
 
     .area-list-icon{
@@ -1158,7 +1168,7 @@ footer{
     }
 
     .area-list-name, .area-list-name:hover {
-        width: 47%;
+        width: 45%;
     }
 }
 
